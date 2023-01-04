@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../public/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./step1.css" />
+    <title>STEP1</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-weight: 500" href="#"
+            >HTML/CSS入門ページ</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a href="" class="nav-link active">Step1</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav-link">Step2</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Step3</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Step4</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Step5</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 class="h3">基本的なCSSプロパティについて</h1>
+      <div class="d-flex justify-content-between">
+        <div
+          id="mp-card"
+          class="card bg-light border border-primary"
+          style="max-width: 22rem"
+        >
+          <div class="card-body border border-secondary">
+            <h2 class="h5 card-title">marginとpaddingの違い</h2>
+            <div class="card-body">
+              <p>
+                コンテンツとボーダーの間の余白がpadding、
+                ボーダーの外側の余白がmarginになる。
+                ボタンを押すとこのカードのmargin/paddingが増加する。
+                ボーダーがどの位置に変化するか当てよう！
+              </p>
+            </div>
+            <div class="text-center mb-2">
+              <span class="mx-1">
+                padding: <span id="p-description">0</span>
+              </span>
+              <span class="mx-2">
+                margin: <span id="m-description">0</span>
+              </span>
+            </div>
+            <div class="text-center">
+              <button id="p-btn" class="btn btn-outline-primary">
+                padding+
+              </button>
+              <button id="m-btn" class="btn btn-outline-primary">
+                margin+
+              </button>
+              <button id="reset-btn" class="btn btn-outline-secondary">
+                reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card ms-2 border border-secondary bg-light"
+          style="width: calc(100% - 15rem)"
+        >
+          <div class="card-body">
+            <h2 class="h5 card-title">displayプロパティ</h2>
+            <div class="d-flex flex-column card-body">
+              <div>
+                <p>基本</p>
+                <ul>
+                  <li>block</li>
+                  <li>inline</li>
+                  <li>inline-block</li>
+                </ul>
+              </div>
+              <div>
+                <div class="bg-primary m-2 p-2">
+                  <span class="bg-secondary" style="width: 10rem">
+                    inline element
+                  </span>
+                  <span class="bg-info" style="width: 15rem">
+                    inline element
+                  </span>
+                  <span class="bg-warning">inline element</span>
+                </div>
+                <div class="bg-primary m-2 p-2">
+                  <div class="bg-secondary" style="width: 10rem">
+                    block element
+                  </div>
+                  <div class="bg-info" style="width: 15rem">block element</div>
+                  <div class="bg-warning">block element</div>
+                </div>
+                <div class="bg-primary m-2 p-2">
+                  <div class="d-inline-block bg-secondary" style="width: 10rem">
+                    inline block element
+                  </div>
+                  <div class="d-inline-block bg-info" style="width: 15rem">
+                    inline block element
+                  </div>
+                  <div class="d-inline-block bg-warning">
+                    inline block element
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card my-2 border border-secondary bg-light">
+        <div class="card-body">
+          <h2 class="h5 card-title">border/outlineプロパティ</h2>
+          <div class="card-body">
+            <div
+              class="p-2 m-2"
+              style="outline: solid 1px blue; border: solid 5px red"
+            >
+              outlineプロパティ: 要素の幅に影響を与えない<br />
+              outlineプロパティ: 上下左右の指定はできない
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="">
+      <div>© @hinamimi_09</div>
+    </footer>
+  </body>
+
+  <script src="./step1.js"></script>
+</html>
